@@ -1,0 +1,16 @@
+iframe
+{
+    border-color: rgb(10, 210, 10);
+}
+
+.home-content{
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+}
+.vid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #10ff6b;
+}
