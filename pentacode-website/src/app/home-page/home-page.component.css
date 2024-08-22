@@ -1,14 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  height: 100vh;
+}
+
 iframe
 {
     border-color: rgb(10, 210, 10);
-}
+    width: 100%;
+  }
 
 .home-content{
+    padding: 1rem 0,5rem;
     display: flex;
-    padding: 5rem;
     justify-content: center;
-}
+  }
+
 .vid {
+    height: 70%;
+    width: 100%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     text-align: center;
