@@ -5,24 +5,9 @@
   height: 100vh;
 }
 
-iframe
-{
-    border-color: rgb(10, 210, 10);
-    width: 100%;
-  }
-
 .home-content{
     padding: 1rem 0,5rem;
     display: flex;
     justify-content: center;
-  }
-
-.vid {
-    height: 70%;
-    width: 100%;
-    max-width: 30rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #10ff6b;
 }
+
