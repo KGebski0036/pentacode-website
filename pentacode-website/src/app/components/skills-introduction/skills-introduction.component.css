@@ -1,0 +1,43 @@
+:host {
+  width: 90%;
+  margin: 1rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 128, 0, 0.096);
+  color: white;
+  padding: 1rem;
+  flex-direction: row;
+}
+
+.team-photo {
+  width: 100rem;
+  border-left: 1px solid white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.project-photo {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 40%;
+}
+img {
+  padding: 0px 4px;
+}
+.skills-images{
+  padding: 1rem;
+}

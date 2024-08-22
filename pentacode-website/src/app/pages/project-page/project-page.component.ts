@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NavigationBarComponent } from "../navigation-bar/navigation-bar.component";
+import { NavigationBarComponent } from "../../components/navigation-bar/navigation-bar.component";
 
 @Component({
-	selector: 'app-home-page',
+	selector: 'app-project-page',
 	standalone: true,
 	imports: [
     CommonModule,
     NavigationBarComponent
 ],
-	templateUrl: './home-page.component.html',
-	styleUrl: './home-page.component.css',
+	templateUrl: './project-page.component.html',
+	styleUrl: './project-page.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent { }
+export class ProjectPageComponent { }
