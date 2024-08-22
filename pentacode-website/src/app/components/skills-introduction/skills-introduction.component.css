@@ -1,15 +1,23 @@
 :host {
   width: 90%;
   margin: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-  width: 100%;
+  max-width: 70rem;
   display: flex;
   background-color: rgba(0, 128, 0, 0.096);
   color: white;
   padding: 1rem;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 1026px) {
+  .team-photo {
+    display: none;
+  }
 }
 
 .team-photo {
@@ -33,7 +41,7 @@
 }
 
 .btn {
-  width: 40%;
+  width: 10rem;
 }
 img {
   padding: 0px 4px;

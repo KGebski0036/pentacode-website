@@ -2,14 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-	selector: 'app-team-introduction',
+	selector: 'app-card4',
 	standalone: true,
 	imports: [
 		CommonModule,
 	],
-	templateUrl: './team-introduction.component.html',
-	styleUrl: './team-introduction.component.css',
+	templateUrl: './card4.component.html',
+	styleUrl: './card4.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TeamIntroductionComponent {
-}
+export class Card4Component { }
