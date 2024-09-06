@@ -1,0 +1,19 @@
+<div class="card-container">
+	<span class="role">{{role}}</span>
+	<img class="round" [src]="photo" alt="user" />
+	<h3>{{name}}</h3>
+	<h6>{{city}}</h6>
+	<p>{{description}}</p>
+	<button class="about-me-button">
+		About Me
+	</button>
+	<div class="skills">
+		<h6>Skills</h6>
+		<ul>
+			@for (skill of skills; track skill.id) {
+				<li>{{skill.name}}</li>
+			}
+		</ul>
+	</div>
+</div>
+

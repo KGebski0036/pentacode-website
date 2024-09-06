@@ -1,0 +1,86 @@
+.role {
+	color: #e8e6f0;
+	background-color: #5acc43;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	color: #5acc43;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	margin: 2rem;
+	background-color: #05802a;
+	border-radius: 5px;
+	box-shadow: 0px 20px 30px -15px rgba(41, 255, 51, 0.75);
+	border: #046e2d 2px solid;
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+	transition: background-color .6s ease, box-shadow .6s ease;
+}
+.card-container:hover {
+	animation-duration: 2s;
+	background-color: #05501b;
+	box-shadow: 0px 20px 70px -15px rgba(41, 255, 51, 0.75);
+}
+.round {
+	border: 1px solid #5acc43;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+.about-me-button {
+	background: linear-gradient(#40972e , #046e2d);
+	border: 1px solid #7eff79;
+	border-radius: 5px;
+	color: #B3B8CD;
+	font-weight: bold;
+	padding: 10px 45px;
+}
+
+.about-me-button:hover{
+	color: #00ff15;
+}
+
+.skills {
+	background-color: #0b2011;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #5acc43;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
