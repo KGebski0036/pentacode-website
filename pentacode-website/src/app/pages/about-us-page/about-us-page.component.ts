@@ -15,4 +15,4 @@ import { AboutUsCardComponent } from "../../components/about-us-card/about-us-ca
 	styleUrl: './about-us-page.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AboutUsPageComponent { }
+export class AboutUsPageComponent {}

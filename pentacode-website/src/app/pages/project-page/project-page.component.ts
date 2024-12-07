@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavigationBarComponent } from "../../components/navigation-bar/navigation-bar.component";
 import { ProjectCardComponent } from "../../components/project-card/project-card.component";
-import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
 	selector: 'app-project-page',
@@ -10,8 +9,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 	imports: [
     CommonModule,
     NavigationBarComponent,
-    ProjectCardComponent,
-    FooterComponent
+    ProjectCardComponent
 ],
 	templateUrl: './project-page.component.html',
 	styleUrl: './project-page.component.css',
