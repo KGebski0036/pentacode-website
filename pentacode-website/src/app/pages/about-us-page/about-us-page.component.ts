@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavigationBarComponent } from "../../components/navigation-bar/navigation-bar.component";
 import { AboutUsCardComponent } from "../../components/about-us-card/about-us-card.component";
+import { BanerComponent } from "../../components/baner/baner.component";
 
 @Component({
 	selector: 'app-about-us-page',
@@ -10,6 +11,7 @@ import { AboutUsCardComponent } from "../../components/about-us-card/about-us-ca
     CommonModule,
     NavigationBarComponent,
     AboutUsCardComponent,
+    BanerComponent
 ],
 	templateUrl: './about-us-page.component.html',
 	styleUrl: './about-us-page.component.css',

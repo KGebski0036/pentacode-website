@@ -4,67 +4,56 @@
 	border-radius: 10px;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 3px 7px;
-	position: absolute;
-	top: 15px;
-	left: 20px;
-}
-
-h3 {
-	margin: 10px 0;
-}
-
-h6 {
-	margin: 5px 0;
-	text-transform: uppercase;
-}
-
-p {
-	color: #5acc43;
-	font-size: 14px;
-	line-height: 21px;
+	width: 50%;
+	margin: 10px;
+	padding: 2px;
 }
 
 .card-container {
+	display: flex;
+	flex-direction: column;
 	margin: 2rem;
-	background-color: #05802a;
 	border-radius: 5px;
-	box-shadow: 0px 20px 30px -15px rgba(41, 255, 51, 0.75);
-	border: #046e2d 2px solid;
+	border: 3px solid green;
 	color: #B3B8CD;
-	padding-top: 30px;
-	position: relative;
-	width: 350px;
-	max-width: 100%;
 	text-align: center;
-	transition: background-color .6s ease, box-shadow .6s ease;
+	padding: 1rem;
+	cursor: pointer;
 }
+
 .card-container:hover {
-	animation-duration: 2s;
-	background-color: #05501b;
-	box-shadow: 0px 20px 70px -15px rgba(41, 255, 51, 0.75);
+	animation: rotateBorderColors 6s linear infinite;
+    transition: 0.5s;
+    box-shadow: 5px 10px 10px black;
+    transform: translateY(-10px);
 }
+
+.card-container:hover .round {
+	transition: 0.5s;
+	box-shadow: 0px 0px 25px #01d9ff;
+}
+
 .round {
-	border: 1px solid #5acc43;
-	border-radius: 50%;
-	padding: 7px;
+	border-radius: 20%;
 }
 
 .about-me-button {
-	background: linear-gradient(#40972e , #046e2d);
-	border: 1px solid #7eff79;
+	background-color: #0EBF52;
 	border-radius: 5px;
-	color: #B3B8CD;
+	color: white;
 	font-weight: bold;
 	padding: 10px 45px;
+	border: none;
 }
 
 .about-me-button:hover{
+	transition: 0.5s;
 	color: #00ff15;
+	background-color: #0b8138;
 }
 
 .skills {
-	background-color: #0b2011;
+	background-color: #11331a;
 	text-align: left;
 	padding: 15px;
 	margin-top: 30px;
@@ -83,4 +72,30 @@ p {
 	font-size: 12px;
 	margin: 0 7px 7px 0;
 	padding: 7px;
+}
+
+h3 {
+	margin-top: 10px;
+	font-weight: 900;
+}
+
+.card-container:hover h3 {
+	color: #00ff15;
+}
+@keyframes rotateBorderColors {
+    0% {
+        border-image: linear-gradient(to right, #01d9ff 0%, #43cc77 100%) 1;
+    }
+    25% {
+        border-image: linear-gradient(to right, #5acc43 0%, #01d9ff  100%) 1;
+    }
+    50% {
+        border-image: linear-gradient(to right, #01d9ff 0%, #5acc43 100%) 1;
+    }
+    75% {
+        border-image: linear-gradient(to right, #5acc43 0%, #01d9ff  100%) 1;
+    }
+    100% {
+        border-image: linear-gradient(to right, #01d9ff 0%, #43cc77 100%) 1;
+    }
 }

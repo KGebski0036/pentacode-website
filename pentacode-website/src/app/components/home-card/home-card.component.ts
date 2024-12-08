@@ -10,4 +10,7 @@ import { Component, Input } from '@angular/core';
 export class HomeCardComponent {
 	@Input()
 	title: string = "";
+
+  @Input()
+	link: string = "";
 }

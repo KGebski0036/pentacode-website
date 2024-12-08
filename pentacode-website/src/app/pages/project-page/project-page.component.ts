@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavigationBarComponent } from "../../components/navigation-bar/navigation-bar.component";
 import { ProjectCardComponent } from "../../components/project-card/project-card.component";
+import { BanerComponent } from "../../components/baner/baner.component";
 
 @Component({
 	selector: 'app-project-page',
@@ -9,7 +10,8 @@ import { ProjectCardComponent } from "../../components/project-card/project-card
 	imports: [
     CommonModule,
     NavigationBarComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    BanerComponent
 ],
 	templateUrl: './project-page.component.html',
 	styleUrl: './project-page.component.css',

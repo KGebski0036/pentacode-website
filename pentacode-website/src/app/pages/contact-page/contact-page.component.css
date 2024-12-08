@@ -1,0 +1,92 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2rem;
+    color: #10FF6B;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+  .contact-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #cccccc;
+  }
+
+  input, textarea {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #666666;
+  }
+
+  button {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #5a5a5a;
+  }
+
+  .social-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #ffffff;
+  }
