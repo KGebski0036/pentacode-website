@@ -26,18 +26,8 @@ img {
 }
 
 .navbar-link {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 0.6rem;
-	align-items: center;
-	justify-content: center;
-	height: 3rem;
-	font-size: large;
-	color: #fff;
-	transition: 250ms ease all;
-	text-decoration: none;
-	text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bs-light);
 }
 
 .navbar-link:hover {
