@@ -13,20 +13,6 @@
   align-items: center;
 }
 
-.btn {
-  transition: 250ms ease all;
-  border: none;
-  width: 50%;
-  color: #F5F5F5;
-  background-color: #0EBF52;
-  border-radius: 20px;
-  max-width: 300px;
-}
-
-.btn:hover {
-  background-color: #0b8138;
-  color: #80FFC4;
-}
 
 span {
   color: #10FF6B;
