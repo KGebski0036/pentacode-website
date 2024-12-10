@@ -1,19 +1,21 @@
-<div class="card-container">
-	<span class="role">{{role}}</span>
-	<img class="round" [src]="photo" alt="user" />
-	<h3>{{name}}</h3>
-	<h6>{{city}}</h6>
-	<p>{{description}}</p>
-	<button class="about-me-button">
-		About Me
-	</button>
-	<div class="skills">
-		<h6>Skills</h6>
-		<ul>
-			@for (skill of skills; track skill.id) {
-				<li>{{skill.name}}</li>
+<div class="p-3 px-4 text-center card h-100 d-flex flex-column gap-3">
+  <div class="p-3 d-flex justify-content-center">
+    <img class="rounded-circle" width="200" height="200" style="object-fit: cover;" [src]="memberInfo.photoUrl" [alt]="'memberInfo.firstName' + 'memberInfo.lastName'" />
+  </div>
+  <div>
+	<h3>{{memberInfo.firstName}}<br>{{memberInfo.lastName}}</h3>
+	<p>{{memberInfo.description}}</p>
+  </div>
+	<div>
+		<p class="text-start m-0">Skills:</p>
+		<ul class="m-0 p-0 d-flex gap-2 flex-wrap list-unstyled">
+			@for (skill of memberInfo.skills; track skill) {
+				<li class="px-1 bg-body-secondary text-bg-body-secondary" style="border-radius: 4px">{{skill}}</li>
 			}
 		</ul>
 	</div>
+	<a [href]="memberInfo.aboutUrl" class="btn btn-outline-primary mt-auto">
+		About Me
+	</a>
 </div>
 

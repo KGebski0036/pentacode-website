@@ -1,10 +1,12 @@
-<div class="container">
-    <div class="box">
-        <h3>TeamHere</h3>
-        <div class="img">
-            <img src=".\.\assets\pentacode-dark.png" alt="tu jest zdjęcie">
-        </div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <div class="button">See more!</div>
+<div style="width: 24rem" class="card">
+  <img class="card-img-top" height="200" style="object-fit: cover;" [src]="img.src" [alt]="img.alt">
+  <div class="card-body">
+    <div class="card-title">
+      <h2>{{title}}</h2>
     </div>
+    <ng-content></ng-content>
+    <div class="mt-2">
+      <a class="btn btn-primary">See more!</a>
+    </div>
+  </div>
 </div>

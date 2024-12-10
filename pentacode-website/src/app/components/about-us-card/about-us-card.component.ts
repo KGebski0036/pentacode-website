@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { TeamMember } from '../../view/TeamMember';
 
 @Component({
 	selector: 'app-about-us-card',
@@ -8,22 +9,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 		CommonModule,
 	],
 	templateUrl: './about-us-card.component.html',
-	styleUrl: './about-us-card.component.css',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+	styleUrl: './about-us-card.component.css'
 })
 export class AboutUsCardComponent {
-	roles = ["Programmer", "ProjectMenager", "Frontend", "Backend"];
-	role = this.roles[Math.floor(Math.random() * 3)];
-	name = "Klepacz Kodu";
-	number = Math.floor(Math.random() * 100)
-	photo = "https://randomuser.me/api/portraits/men/" + this.number + ".jpg";
-	city = "Kielce";
-	description = "Sub code website editor"
-
-	skills = [
-		{id: 1, name: "C++"},
-		{id: 2, name: "Angular"},
-		{id: 3, name: "C#"},
-		{id: 4, name: "HTML/CSS"},
-	];
+  @Input()
+  memberInfo!: TeamMember;
 }

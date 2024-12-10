@@ -3,18 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
 @import "bootstrap/scss/functions";
-/*
-body{
-	background-color: #303030;
-	font-family: "Open Sans", sans-serif;
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-}
-*/
-
 
 $primary: #10FF6B;
 $font-family-sans-serif: "Space Grotesk";
 $border-radius: 8px;
+
 @import "bootstrap/scss/bootstrap";

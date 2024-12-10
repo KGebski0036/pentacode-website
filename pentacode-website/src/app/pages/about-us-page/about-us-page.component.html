@@ -20,10 +20,8 @@
     <a href="contact"><button class="btn btn-primary">Contact us</button></a>
 </app-baner>
 
-<div class="cards">
-	<app-about-us-card></app-about-us-card>
-	<app-about-us-card></app-about-us-card>
-	<app-about-us-card></app-about-us-card>
-	<app-about-us-card></app-about-us-card>
-	<app-about-us-card></app-about-us-card>
+<div class="d-flex justify-content-evenly gap-4 p-4">
+  @for(member of teamMembers; track member.firstName) {
+    <app-about-us-card [memberInfo]="member" style="flex-basis: 0" class="flex-grow-1"></app-about-us-card>
+  }
 </div>

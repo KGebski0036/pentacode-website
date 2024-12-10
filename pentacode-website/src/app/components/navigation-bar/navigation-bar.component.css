@@ -2,10 +2,6 @@
   display: block;
 }
 
-.bg-body-tertiary{
-  background-color: #1A1A1A !important;
-}
-
 .header-logo {
 	width: 12rem;
 }
@@ -27,11 +23,6 @@ img {
 
 .navbar-link {
   text-decoration: none;
-  color: var(--bs-light);
-}
-
-.navbar-link:hover {
-	color: #10ff6b;
 }
 
 .navbar-brand{
@@ -47,10 +38,6 @@ ul {
   padding: 10px;
 }
 
-.menu-button{
-  background-color: #10ff6b;
-  margin: auto;
-}
 
 a {
 	display: flex;
