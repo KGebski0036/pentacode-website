@@ -1,21 +1,9 @@
 <app-baner>
   <h1>Our Projects</h1>
-  <p>Team <strong>Pentacode</strong> specializes in developing cutting-edge, personalized <strong>web applications
-  </strong> tailored to meet diverse client needs.
-    Our projects seamlessly blend innovation with functionality, leveraging modern technologies like <strong>.NET
-      Core</strong>, <strong>Angular</strong>,
-    <strong>Entity Framework</strong> and <strong>SQL Server</strong> to build <strong>robust backends</strong> and
-    <strong>dynamic</strong>, <strong>user-friendly frontends</strong>.
-  </p>
-  <p>We focus on creating <strong>scalable</strong>, <strong>secure</strong> and <strong>efficient applications</strong>,
-    whether for e-commerce, enterprise solutions, or customer-centric platforms.
-    With an emphasis on responsiveness and tailored designs, our solutions <strong>empower businesses</strong> to
-    streamline operations, enhance user experiences,
-    and achieve their goals.
-  </p>
-  <div>
-    <a href="contact"><button routerLinkActive="router-link-active"  class="btn btn-primary">Contact us</button></a>
+  <div class="d-flex">
+    This page is dedicated to highlight projects we developed.
   </div>
+  <a href="contact" class="mt-2"><button routerLinkActive="router-link-active"  class="btn btn-primary">Contact us</button></a>
 </app-baner>
 
 <div class="main">
@@ -56,13 +44,13 @@ CSS
   </div>
   <div class="d-flex p-3 flex-row flex-wrap justify-content-evenly">
     <app-project-card [img]="{src:'projects/big-ben-ten.png', alt:'Big Ben Ten'}" title="BigBenTen">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, in. Omnis voluptas hic aliquam dolores, officia quo voluptates at doloribus nesciunt magni, unde fuga assumenda expedita non odit ducimus libero?
+      A modular wearable device design, developed for the Platynowy Indeks Politechniki Świętokrzyskiej contest. 
     </app-project-card>
     <app-project-card [img]="{src: 'projects/sims.png', alt: 'Sims'}" title="Sims">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, in. Omnis voluptas hic aliquam dolores, officia quo voluptates at doloribus nesciunt magni, unde fuga assumenda expedita non odit ducimus libero?
+      Website to aid students with registrations for internships at Kielce University of Technology.
     </app-project-card>
     <app-project-card [img]="{src: 'projects/teamhere.png', alt: 'TeamHere'}" title="TeamHere">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, in. Omnis voluptas hic aliquam dolores, officia quo voluptates at doloribus nesciunt magni, unde fuga assumenda expedita non odit ducimus libero?
+      Sport event organization website, developed for Silevis Hackathon 2023.
     </app-project-card>
   </div>
 </div>
